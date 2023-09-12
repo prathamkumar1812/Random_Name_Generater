@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Name Generater</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <i class="fa-brands fa-youtube"></i>
+        <h1>Channel Random Name Generater</h1>
+
+    </header>
+
+    <main>
+        <section class="submitsection">
+            <h2 id="formheading" class="offscreen"> Enter Your First Name</h2>
+            <Form id="submitForm" class="submit_sectionForm">
+                <input type="text" id="submitInput" class="submit_sectionInput" required maxlength="20" placeholder="Enter the Name" aria-labelledby="formheading">
+                <button class="submit_button" aria-label="submit">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+            </Form>
+
+        </section>
+        <section id="suggestion_section" class="suggestion_section hidden">
+            <h2>Suggestion</h2>
+            <ol></ol>
+            <p>Click the name to see if it is already taken</p>
+        </section>
+    </main>
+</body>
+<script src="js/main.js" type="module"></script>
+
+</html>
